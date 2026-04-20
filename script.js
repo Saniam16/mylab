@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
   function updateUI() {
-    playBtn.textContent = audio.paused ? "▶ Play" : "⏸ Pause";
+    playBtn.textContent = audio.paused ? " Play" : " Pause";
   }
 
   audio.addEventListener("play", updateUI);
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   muteBtn.addEventListener("click", () => {
     audio.muted = !audio.muted;
-    muteBtn.textContent = audio.muted ? "🔊 Unmute" : "🔇 Mute";
+    muteBtn.textContent = audio.muted ? " Unmute" : " Mute";
   });
 
  
